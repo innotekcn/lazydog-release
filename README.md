@@ -17,5 +17,5 @@
 - 在安卓手机上下载并安装 app-ota-v3.0.1.apk
 
 #### 安卓上运行 OTA APP
-![BLE scan](/images/ota0.png)
-![OTA](/images/ota1.png)
+![BLE scan](/images/ota0.jpg)
+![OTA](/images/ota1.jpg)
