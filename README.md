@@ -22,5 +22,21 @@
 ### 数据采集
 数据采集以后会储存在手机里的CSV文件，以下路径：Android\data\com.innotek.android.lazydog\files
 
+## 工厂测试
+通过连接UART2端口（115200 bps）发送命令进行测试。命令格式：
+1. REST
+
+重新启动
+1. TMAG
+
+测试MAG sensor， 返回pass 或 fail
+1. TRAG
+
+测试Radar sensor，返回pass 或 fail
+1. MACB
+
+读取BLE的MAC地址，返回蓝牙MAC地址
+
+
 ![BLE scan](/images/ota0.jpg)
 ![OTA](/images/ota1.jpg)
