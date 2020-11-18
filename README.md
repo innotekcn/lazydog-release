@@ -24,17 +24,13 @@
 
 ## 工厂测试
 通过连接UART2端口（115200 bps）发送命令进行测试。命令格式：
-1. REST
-
+- REST
 重新启动
-1. TMAG
-
+- TMAG
 测试MAG sensor， 返回pass 或 fail
-1. TRAG
-
+- TRAG
 测试Radar sensor，返回pass 或 fail
-1. MACB
-
+- MACB
 读取BLE的MAC地址，返回蓝牙MAC地址
 
 
