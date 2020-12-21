@@ -1,0 +1,8 @@
+#!/bin/sh -v
+
+VNAME=v$1
+mkdir $VNAME || { echo 'dirctory exists, exit...'; exit 1; }
+cp ~/innotek/stm32/tmp/lzdog/MDK-ARM/lzdog/*.hex $VNAME/lzdog-$1.hex
+cp ~/innotek/stm32/tmp/lzdog/MDK-ARM/lzdog/upgrade.bin $VNAME/lzdog-$1.bin
+cp v0.5/lzboot-b1.hex $VNAME/
+srec_cat $VNAME/lzboot-b1.hex -Intel $VNAME/lzdog-$1.hex -Intel -o $VNAME/lz-all-$1.hex
